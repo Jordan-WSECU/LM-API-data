@@ -1,0 +1,9 @@
+{
+	"name": "LMAPIDF",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "5b5cefcc-23a7-4a22-99c1-a0900df05b64",
+		"tenantId": "0c292c6a-3f08-411b-abf2-6898106d53e6"
+	}
+}

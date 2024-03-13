@@ -1,0 +1,20 @@
+{
+	"name": "DestinationDataset_8wn",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LmJsonBlobs",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "json1",
+				"container": "relationships"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
