@@ -50,6 +50,107 @@
 							},
 							"path": "logs"
 						}
+					},
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"path": "$['profile']['tabs'][0]['id']"
+								},
+								"sink": {
+									"path": "$['profile']['tabs'][0]['id']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['profile']['tabs'][0]['name']"
+								},
+								"sink": {
+									"path": "$['profile']['tabs'][0]['name']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['profile']['tabs'][0]['fields'][0]['id']"
+								},
+								"sink": {
+									"path": "$['profile']['tabs'][0]['fields'][0]['id']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['profile']['tabs'][0]['fields'][0]['name']"
+								},
+								"sink": {
+									"path": "$['profile']['tabs'][0]['fields'][0]['name']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['profile']['tabs'][0]['fields'][0]['key']"
+								},
+								"sink": {
+									"path": "$['profile']['tabs'][0]['fields'][0]['key']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['profile']['tabs'][0]['fields'][0]['type']"
+								},
+								"sink": {
+									"path": "$['profile']['tabs'][0]['fields'][0]['type']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['profile']['tabs'][0]['fields'][0]['description']"
+								},
+								"sink": {
+									"path": "$['profile']['tabs'][0]['fields'][0]['description']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['profile']['tabs'][0]['fields'][0]['required']"
+								},
+								"sink": {
+									"path": "$['profile']['tabs'][0]['fields'][0]['required']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['profile']['tabs'][0]['fields'][0]['reporterView']"
+								},
+								"sink": {
+									"path": "$['profile']['tabs'][0]['fields'][0]['reporterView']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['profile']['tabs'][0]['fields'][0]['choices'][0]['id']"
+								},
+								"sink": {
+									"path": "$['profile']['tabs'][0]['fields'][0]['choices'][0]['id']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['profile']['tabs'][0]['fields'][0]['choices'][0]['name']"
+								},
+								"sink": {
+									"path": "$['profile']['tabs'][0]['fields'][0]['choices'][0]['name']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['elementType']"
+								},
+								"sink": {
+									"path": "$['elementType']"
+								}
+							}
+						]
 					}
 				},
 				"inputs": [
