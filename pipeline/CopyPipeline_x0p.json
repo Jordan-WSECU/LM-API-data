@@ -29,7 +29,8 @@
 					"sink": {
 						"type": "JsonSink",
 						"storeSettings": {
-							"type": "AzureBlobStorageWriteSettings"
+							"type": "AzureBlobStorageWriteSettings",
+							"copyBehavior": "PreserveHierarchy"
 						},
 						"formatSettings": {
 							"type": "JsonWriteSettings",
@@ -37,6 +38,7 @@
 						}
 					},
 					"enableStaging": false,
+					"enableSkipIncompatibleRow": true,
 					"logSettings": {
 						"enableCopyActivityLog": true,
 						"copyActivityLogSettings": {
@@ -150,7 +152,8 @@
 									"path": "$['elementType']"
 								}
 							}
-						]
+						],
+						"collectionReference": ""
 					}
 				},
 				"inputs": [
