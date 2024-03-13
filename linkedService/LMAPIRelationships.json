@@ -7,7 +7,17 @@
 		"typeProperties": {
 			"url": "https://wsecu.logicmanager.com/api/v1/taxonomy/relationships/",
 			"enableServerCertificateValidation": true,
-			"authenticationType": "Anonymous"
+			"authenticationType": "Anonymous",
+			"authHeaders": {
+				"Authorization": {
+					"type": "SecureString",
+					"value": "**********"
+				},
+				"Api-Key": {
+					"type": "SecureString",
+					"value": "**********"
+				}
+			}
 		}
 	}
 }
